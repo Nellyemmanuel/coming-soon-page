@@ -1,0 +1,130 @@
+ /* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  display: flex;
+  row-gap: 15px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+}
+.container .image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+h1{
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.2rem;
+    /* text-align: center; */
+    max-width: 80rem;
+    margin-bottom: 0%;
+}
+.container header {
+  font-size: 60px;
+  background: linear-gradient(to right, #1822d2, #2578ed,
+            #30f7fa);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0%;
+}
+.container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: #fff;
+  max-width: 60rem;
+  text-align: center;
+}
+.container .time-content {
+  display: flex;
+  column-gap: 30px;
+  align-items: center;
+}
+.time-content .time {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.time .number,
+.time .text {
+  font-weight: 500;
+  color: #fff;
+}
+.time .number {
+  font-size: 3rem;
+}
+.time .text {
+  text-transform: capitalize;
+  color: #0d73cd;
+  font-size: 1rem;
+}
+.email-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  max-width: 360px;
+  width: 100%;
+  margin-top: 10px;
+  column-gap: 20px;
+}
+.input-box input,
+.input-box button {
+  height: 100%;
+  outline: none;
+  border: none;
+  border: 3px solid #0d73cd;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: 400;
+  font-size: 1rem;
+
+}
+.input-box input {
+  width: 100%;
+  padding: 0 15px;
+  color: #fff;
+}
+input::placeholder {
+  color: #eee;
+}
+.input-box button {
+  cursor: pointer;
+  color: #eee;
+  white-space: nowrap;
+  padding: 0 20px;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+.input-box button:hover {
+  background-color: #fff;
+  color: #edf1f2;
+}
+
+@media screen and (max-width: 300px) {
+  .container header {
+    font-size: 50px;
+  }
+}
+
